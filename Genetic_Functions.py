@@ -31,13 +31,9 @@ def initialize_population(size, variable, decimals):
             z_r = round(random.uniform(0, 30), decimals)
             z = decimal_to_binary(z_r, decimals)
 
-            # Αφαιρούμε τις τελείες από τους δυαδικούς αριθμούς
-            x_s = x.replace(".", "")
-            y_s = y.replace(".", "")
-            z_s = z.replace(".", "")
-
+            
             # Ενώνουμε τους τρεις δυαδικούς αριθμούς σε έναν ενιαίο δυαδικό αριθμό
-            individual = x_s + y_s + z_s
+            individual = x + y + z
 
         elif variable == 2:  # Ακέραια αναπαράσταση
             x = str(random.randint(0, 10))  # Δημιουργία τυχαίου x εντός ορίων
