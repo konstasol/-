@@ -40,7 +40,7 @@ def decimal_to_binary(pragmatikos, decimal_points):
         # δεκαδικό μέρος για πολλαπλασιασμό με το 2 ώστε να πάρουμε το επόμενο bit
 
     binary_rep = akeraio_meros + dekadiko  # Δημιουργούμε τον binary συνδυάζοντας τα 2 μέρη
-    return str(binary_rep)  # Μετατροπή σε string και επιστροφή δυαδικού αριθμού με κόμμα
+    return binary_rep  # Μετατροπή σε string και επιστροφή δυαδικού αριθμού με κόμμα
 
 
 """ 
